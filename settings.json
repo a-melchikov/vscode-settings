@@ -1,0 +1,41 @@
+{
+    "extensions.autoCheckUpdates": false,
+    "update.enableWindowsBackgroundUpdates": false,
+    "extensions.autoUpdate": false,
+    "update.showReleaseNotes": false,
+    "update.mode": "none",
+    "debug.inlineValues": "on",
+    "debug.autoExpandLazyVariables": true,
+    "editor.minimap.enabled": false,
+    "editor.lineHeight": 1.5,
+    "editor.rulers": [
+        99
+    ],
+    "editor.fontFamily": "JetBrains Mono",
+    "workbench.colorTheme": "GitHub Dark Default",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "window.commandCenter": false,
+    "workbench.startupEditor": "none",
+    "files.autoSave": "afterDelay",
+    "explorer.autoReveal": false,
+    "explorer.compactFolders": false,
+    "breadcrumbs.enabled": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "workbench.productIconTheme": "fluent-icons",
+    "symbols.hidesExplorerArrows": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.wordWrap": "on",
+    "security.workspace.trust.banner": "never",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "cSpell.language": "en,ru",
+    "cSpell.userWords": [
+        "aiogram",
+        "dotenv",
+        "kbds"
+    ],
+    "[django-txt]": {
+        
+    },
+}
