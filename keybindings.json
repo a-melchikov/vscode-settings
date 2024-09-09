@@ -1,0 +1,122 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+escape",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+enter",
+    "command": "workbench.action.terminal.showQuickFixes",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "alt+enter",
+    "command": "problems.action.showQuickFixes",
+    "when": "problemFocus"
+  },
+  {
+    "key": "shift+cmd+ctrl+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "shift+cmd+ctrl+c",
+    "command": "list.collapseAll",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "shift+cmd+ctrl+1",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": ""
+  },
+  {
+    "key": "shift+cmd+ctrl+2",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  {
+    "key": "shift+cmd+ctrl+3",
+    "command": "workbench.action.toggleMenuBar",
+    "when": ""
+  },
+  {
+    "key": "shift+cmd+ctrl+4",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+z up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "ed itorTextFocus"
+  },
+  {
+    "key": "alt+z down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+f8",
+    "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key": "ctrl+f7",
+    "command": "workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  }
+]
