@@ -1,41 +1,138 @@
 {
-    "extensions.autoCheckUpdates": false,
-    "update.enableWindowsBackgroundUpdates": false,
-    "extensions.autoUpdate": false,
-    "update.showReleaseNotes": false,
-    "update.mode": "none",
-    "debug.inlineValues": "on",
-    "debug.autoExpandLazyVariables": true,
-    "editor.minimap.enabled": false,
-    "editor.lineHeight": 1.5,
-    "editor.rulers": [
-        99
-    ],
-    "editor.fontFamily": "JetBrains Mono",
-    "workbench.colorTheme": "GitHub Dark Default",
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorBlinking": true,
-    "window.commandCenter": false,
-    "workbench.startupEditor": "none",
-    "files.autoSave": "afterDelay",
-    "explorer.autoReveal": false,
-    "explorer.compactFolders": false,
-    "breadcrumbs.enabled": false,
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "workbench.productIconTheme": "fluent-icons",
-    "symbols.hidesExplorerArrows": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "terminal.integrated.fontFamily": "monospace",
-    "editor.wordWrap": "on",
-    "security.workspace.trust.banner": "never",
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "cSpell.language": "en,ru",
-    "cSpell.userWords": [
-        "aiogram",
-        "dotenv",
-        "kbds"
-    ],
-    "[django-txt]": {
-        
-    },
+  // Обёртка текста в редакторе
+  "editor.wordWrap": "bounded", // Установка обёртки текста по ширине окна
+  "editor.wrappingIndent": "same", // Отступы обёртки совпадают с основным текстом
+  "editor.wordWrapColumn": 80, // Максимальная ширина строки
+
+  // Темы и иконки рабочего пространства
+  "workbench.iconTheme": "symbols", // Тема иконок
+  "workbench.colorTheme": "Darcula", // Цветовая тема
+  "workbench.productIconTheme": "fluent-icons", // Тема иконок продуктов
+
+  // Настройки шрифта в редакторе
+  "editor.fontFamily": "JetBrains Mono", // Шрифт в редакторе
+  "editor.fontSize": 14, // Размер шрифта
+  "editor.lineHeight": 1.5, // Высота строки
+
+  // Вертикальные линии для ограничения длины кода
+  "editor.rulers": [99], // Позиция линейки для удобного просмотра длинных строк
+
+  // Миникарта
+  "editor.minimap.enabled": false, // Отключение миникарты
+
+  // Связанное редактирование
+  "editor.linkedEditing": true, // Включение связанного редактирования
+
+  // Настройки терминала
+  "terminal.integrated.cursorStyle": "line", // Стиль курсора в терминале
+  "terminal.integrated.cursorBlinking": true, // Мигающий курсор в терминале
+
+  // Автосохранение файлов
+  "files.autoSave": "afterDelay", // Автосохранение после задержки
+
+  // Настройки проводника
+  "explorer.autoReveal": false, // Отключить автоматическое раскрытие файлов
+  "explorer.compactFolders": false, // Отключить компактное отображение папок
+
+  // Масштаб окна
+  "window.zoomLevel": 1, // Уровень зума окна
+
+  // Форматирование JSONC
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Форматирование JSONC через Prettier
+  },
+
+  // Внешний вид окон и панелей
+  "window.density.editorTabHeight": "compact", // Компактные вкладки редактора
+  "window.commandCenter": false, // Скрыть командный центр
+  "workbench.layoutControl.enabled": false, // Отключить панель управления макетом
+
+  // Настройки курсора
+  "editor.cursorBlinking": "expand", // Расширенное мигание курсора
+  "editor.cursorStyle": "line-thin", // Тонкий стиль курсора
+  "editor.cursorSmoothCaretAnimation": "explicit", // Явная анимация курсора
+
+  // Проверка орфографии
+  "cSpell.language": "en,ru", // Языки проверки орфографии
+  "cSpell.userWords": ["fastapi", "pydantic", "uvicorn"],
+  "cSpell.enabled": true, // Включение проверки орфографии
+
+  // Исключение файлов из проводника
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.idea": true
+  },
+
+  // Внешний вид заголовка окна
+  "window.titleBarStyle": "custom", // Пользовательский стиль заголовка окна
+  "window.customTitleBarVisibility": "auto", // Автоматическое управление видимостью заголовка
+
+  // Переход к местоположению
+  "editor.gotoLocation.multipleDeclarations": "goto", // Переход при множественных декларациях
+
+  // Левый отступ для иконок в редакторе
+  "editor.glyphMargin": false, // Отключение отступа для отладочных иконок
+
+  // Панель активности
+  "workbench.activityBar.location": "top", // Отключение отображения строки состояния
+
+  // Форматирование JavaScript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Форматирование JavaScript через Prettier
+  },
+
+  // Настройки для Breadcrumbs
+  "breadcrumbs.icons": false,
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showFiles": false,
+  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.showEvents": false,
+  "breadcrumbs.showFields": false,
+  "breadcrumbs.showClasses": false,
+  "breadcrumbs.showMethods": false,
+  "breadcrumbs.showBooleans": false,
+  "breadcrumbs.showFunctions": false,
+  "breadcrumbs.showConstants": false,
+  "breadcrumbs.showEnumMembers": false,
+  "breadcrumbs.showConstructors": false,
+
+  // Установить плоские вкладки редактора
+  "workbench.editor.tabSizing": "shrink",
+  // Настройка границ редактора
+  "editor.renderLineHighlightOnlyWhenFocus": true,
+  // Включение автодополнения для всех возможных элементов
+  "editor.suggestSelection": "first",
+  // Включение автозавершения с учетом регистра
+  "editor.snippetSuggestions": "top",
+  // Автодополнение при наборе слова
+  "editor.acceptSuggestionOnEnter": "smart",
+  // Настройка автосохранения файлов в определенные моменты
+  "files.autoSaveDelay": 1000,
+  // Установка цвета фона редактора для глаз и Установка подсветки строки курсора
+  "workbench.colorCustomizations": {
+    "editor.background": "#1e1e1e",
+    "editor.lineHighlightBackground": "#333333"
+  },
+  // Настройка автоматического обновления
+  "update.showReleaseNotes": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.completeFunctionParens": true,
+  "workbench.statusBar.visible": false,
+  "window.menuBarVisibility": "compact"
 }
