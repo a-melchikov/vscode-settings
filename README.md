@@ -1,32 +1,36 @@
-# Мои настройки для Visual Studio Code
+# Резервная копия настроек VS Code
 
-## Расширения
+Этот репозиторий содержит мои личные настройки Visual Studio Code и список установленных расширений для удобной синхронизации между разными компьютерами.
 
-### Общее
+## Как создать резервную копию настроек VS Code
 
-- Auto Rename Tag
-- Black Formatter
-- Code Spell Checker
-- Russian - Code Spell Checker
-- CSS Peek
-- GitHub Theme
-- Material Icon Theme
+- Настройки пользователя хранятся в файле `settings.json`, бинды в `keybindings.json`. Эти файлы можно найти по следующим путям:
 
-### Разработка веб-приложений
+  - **Windows**: `C:\Users\<username>\AppData\Roaming\Code\User\`
+  - **Linux**: `/home/<username>/.config/Code/User/`
 
-- Django
-- Live Server
-- IntelliSense for CSS
+- Чтобы сохранить список установленных расширений, выполните команду в терминале VS Code:
 
-### Разработка на Python
+  ```bash
+  code --list-extensions > extensions.txt
+  ```
+- Это создаст файл extensions.txt, содержащий список всех установленных расширений.
 
-- Pylance
-- Pylint
-- Python
-- Python Debugger
+## Как восстановить настройки на другом компьютере
 
-### Другие
+- Клонируйте репозиторий с настройками:
 
-- Fluent Icons
-- Symbols
-- WSL
+  ```bash
+  git clone https://github.com/<ваш-username>/vscode-settings.git
+  ```
+- Скопируйте файлы настроек в нужную директорию:
+
+  - **Windows**: `C:\Users\<username>\AppData\Roaming\Code\User\`
+  - **Linux**: `/home/<username>/.config/Code/User/`
+
+- Установите расширения из файла extensions.txt:
+
+  ```bash
+  cat extensions.txt | xargs -n 1 code --install-extension
+  ```
+  
