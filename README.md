@@ -28,9 +28,13 @@
   - **Windows**: `C:\Users\<username>\AppData\Roaming\Code\User\`
   - **Linux**: `/home/<username>/.config/Code/User/`
 
-- Установите расширения из файла extensions.txt:
+- Установите расширения из файла extensions.txt для Linux:
 
   ```bash
   cat extensions.txt | xargs -n 1 code --install-extension
   ```
-  
+- Для Windows(PowerShell):
+
+  ```powershell
+  Get-Content extensions.txt | ForEach-Object { code --install-extension $_ }
+  ```
